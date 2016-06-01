@@ -1,4 +1,4 @@
-react-konva
+konva-react
 =============
 
 Konva canvas library using React components based on [react-kinetic](https://github.com/freiksenet/react-kinetic).
@@ -12,19 +12,21 @@ events are supported on them in same way as normal browser events are supported.
 
 You can even inspect the components in React dev tools.
 
+Updated to support React version 15 and above
+
 Installation
 ------------
 
 If you use browserify or webpack
 
 ```
-npm install react konva react-konva
+npm install react konva konva-react
 ```
 
 Then just require it
 
 ```js
-require('react-konva');
+require('konva-react');
 ```
 
 If you use require.js or want to use it standalone, then standalone version is
@@ -33,8 +35,8 @@ available in [Releases](https://github.com/olimsaidov/react-konva/releases).
 If you want to build from source
 
 ```
-git clone https://github.com/olimsaidov/react-konva.git
-cd react-konva
+git clone https://github.com/moondram832001/konva-react.git
+cd konva-react
 npm run build
 ```
 
@@ -45,7 +47,7 @@ Minimal example:
 
 ```js
 var React = require('react');
-var ReactKonva = require('react-konva');
+var ReactKonva = require('konva-react');
 
 var Demo = React.createClass({
   render: function () {
@@ -83,7 +85,7 @@ elements are: `Container`, `Layer`, `Group`, `Label`, `Shape`, `Rect`, `Circle`,
 
 ### Events
 
-react-konva supports all Konva events. The names are done 'react-style',
+konva-react supports all Konva events. The names are done 'react-style',
 so `onCamelCased`. Full mapping:
 
 ```js
@@ -118,4 +120,4 @@ e.g. in `componentDidMount`.
 ### Some internals
 
 To get raw Konva node object, use the `node` property which all
-react-konva components have.
+konva-react components have.
